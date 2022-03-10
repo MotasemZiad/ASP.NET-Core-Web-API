@@ -27,6 +27,10 @@ namespace WebAPI
         public static void Foo()
         {
             Console.WriteLine("Password is encrypted");
+            string Name = "Motasem Abu Nema";
+            int Age = 22;
+
+            Console.WriteLine("My name is " + Name + ". I'm " + Age + " years old.");
         }
     }
 }
