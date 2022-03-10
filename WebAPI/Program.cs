@@ -14,6 +14,8 @@ namespace WebAPI
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+            Console.WriteLine("The current date is " + DateTime.Now);
+            Foo();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +24,9 @@ namespace WebAPI
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+        public static void Foo()
+        {
+            Console.WriteLine("Password is encrypted");
+        }
     }
 }
